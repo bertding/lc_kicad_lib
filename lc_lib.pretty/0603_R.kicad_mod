@@ -1,25 +1,188 @@
-(module lc_lib:0603_R (layer F.Cu) (tedit 58AA841A)
-  (pad 1 smd rect (at -0.77 -0.0) (size 0.93 0.98) (drill 0) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0.77 -0.0) (size 0.93 0.98) (drill 0) (layers F.Cu F.Paste F.Mask))
-  (fp_line (start 0.4 0.79) (end 1.535 0.79) (layer F.SilkS) (width 0.2))
-  (fp_line (start -1.535 0.79) (end -0.4 0.79) (layer F.SilkS) (width 0.2))
-  (fp_line (start 0.4 -0.79) (end 1.535 -0.79) (layer F.SilkS) (width 0.2))
-  (fp_line (start -1.535 0.79) (end -1.535 -0.79) (layer F.SilkS) (width 0.2))
-  (fp_line (start 1.535 0.79) (end 1.535 -0.79) (layer F.SilkS) (width 0.2))
-  (fp_line (start -1.535 -0.79) (end -0.4 -0.79) (layer F.SilkS) (width 0.2))
-  (fp_text reference REF** (at -0.15861914098256 -1.4392761718035) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value 0603_R (at 0.13665703082093 3.3887238281965) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start -1.585 -0.84) (end 1.585 -0.84) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 1.585 -0.84) (end 1.585 0.84) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 1.585 0.84) (end -1.585 0.84) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1.585 0.84) (end -1.585 -0.84) (layer F.CrtYd) (width 0.05))
-  (model ${KISYS3DMOD}/Resistors_SMD.3dshapes/R_0603.step
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "0603_R"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.158619 -1.439276 0)
+		(layer "F.SilkS")
+		(uuid "ecef9668-ac37-4970-b786-b5b4393b6a51")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "0603_R"
+		(at 0.136657 3.388724 0)
+		(layer "F.Fab")
+		(uuid "78c29fc5-2d50-4ec2-b408-e1aab9c7197d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d3c1c3b-5f36-47d1-8f8d-90379d1973bd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c62ba51-7fda-498a-a8ab-eca21a6c39c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55c3f463-f99a-414e-b15b-97e5ef21dcfd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.535 -0.79)
+		(end -0.4 -0.79)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b7f692c-8a53-4099-91c8-ac338f9b0743")
+	)
+	(fp_line
+		(start -1.535 0.79)
+		(end -1.535 -0.79)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cd5174c-4e34-4bbb-b3bc-de8e7ea1fbfa")
+	)
+	(fp_line
+		(start -1.535 0.79)
+		(end -0.4 0.79)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8ef92765-ddc6-46ba-8efb-23f001f1d1fe")
+	)
+	(fp_line
+		(start 0.4 -0.79)
+		(end 1.535 -0.79)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5b5c0751-68f2-40ab-8d3d-560c9f31f01e")
+	)
+	(fp_line
+		(start 0.4 0.79)
+		(end 1.535 0.79)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "46f9733b-6bb7-4d23-90ef-faf31ce17e5e")
+	)
+	(fp_line
+		(start 1.535 0.79)
+		(end 1.535 -0.79)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf74bb8b-e935-4c90-9f0a-02842157f0f9")
+	)
+	(fp_line
+		(start -1.585 -0.84)
+		(end 1.585 -0.84)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d1b87bcc-9041-4eb9-8c08-3d0737513231")
+	)
+	(fp_line
+		(start -1.585 0.84)
+		(end -1.585 -0.84)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "55840ff5-70a0-40aa-b609-971b6be055a0")
+	)
+	(fp_line
+		(start 1.585 -0.84)
+		(end 1.585 0.84)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "339f7786-6479-458c-a68b-2d1a9ff0cdb4")
+	)
+	(fp_line
+		(start 1.585 0.84)
+		(end -1.585 0.84)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cc66014f-5af8-487f-b85d-424132d84544")
+	)
+	(pad "1" smd rect
+		(at -0.77 0)
+		(size 0.93 0.98)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "bde77a9e-9b78-4731-b415-cdb23a33be16")
+	)
+	(pad "2" smd rect
+		(at 0.77 0)
+		(size 0.93 0.98)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "136379fc-7bd3-4671-9a94-31671fdf34b2")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
